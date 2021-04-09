@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js"></script>
+    <script src="./counter.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Counter</h1>
+        <div class="field">
+          <div class="control">
+            <input id="count" class="input has-text-centered" type="text" readonly />
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <p class="control">
+            <button id="up" class="button is-primary">
+              <span class="icon">
+                <i class="las la-long-arrow-alt-up"></i>
+              </span>
+              <span>Up</span>
+            </button>
+          </p>
+          <p class="control">
+            <button id="down" class="button is-primary">
+              <span class="icon">
+                <i class="las la-long-arrow-alt-down"></i>
+              </span>
+              <span>Down</span>
+            </button>
+          </p>
+          <p class="control">
+            <button id="reset" class="button is-danger">
+              <span class="icon">
+                <i class="las la-undo-alt"></i>
+              </span>
+              <span>Reset</span>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>&copy; 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
