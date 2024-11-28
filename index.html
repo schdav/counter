@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Counter</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="./counter.js"></script>
   </head>
@@ -17,14 +27,18 @@
         <h1 class="title">Counter</h1>
         <div class="field">
           <div class="control">
-            <input id="count" class="input has-text-centered" type="text" readonly />
+            <input
+              id="count"
+              class="input has-text-centered"
+              type="text"
+              readonly />
           </div>
         </div>
         <div class="field is-grouped">
           <p class="control">
             <button id="up" class="button is-primary">
               <span class="icon">
-                <i class="fa fa-long-arrow-alt-up"></i>
+                <ion-icon name="arrow-up-outline"></ion-icon>
               </span>
               <span>Up</span>
             </button>
@@ -32,7 +46,7 @@
           <p class="control">
             <button id="down" class="button is-primary">
               <span class="icon">
-                <i class="fa fa-long-arrow-alt-down"></i>
+                <ion-icon name="arrow-down-outline"></ion-icon>
               </span>
               <span>Down</span>
             </button>
@@ -40,7 +54,7 @@
           <p class="control">
             <button id="reset" class="button is-danger">
               <span class="icon">
-                <i class="fa fa-undo-alt"></i>
+                <ion-icon name="refresh-outline"></ion-icon>
               </span>
               <span>Reset</span>
             </button>
@@ -50,7 +64,12 @@
     </section>
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>&copy; 2024</p>
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
       </div>
     </footer>
   </body>

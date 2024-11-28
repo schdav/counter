@@ -21,5 +21,5 @@ $(document).ready(function () {
   $('#reset').click(function () {
     Cookies.set('count', 0, { expires: 7, secure: true });
     $('#count').val(Cookies.get('count'));
-  })
+  });
 });
